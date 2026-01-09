@@ -1,6 +1,7 @@
 
 const task = document.querySelector("#inp");
 const items = document.querySelector("#list-items");
+
 function addTask() {
     // alert("cvbnm,");
     if (task.value == "") {
@@ -18,8 +19,10 @@ function addTask() {
             document.querySelector(`.button2 button`).style.visibility = "hidden";
         }
     })
+    
 }
 function clear() {
     items.innerHTML="";
     document.querySelector(`button2 button`).style.visibility = "hidden";
 }
+
